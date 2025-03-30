@@ -1,0 +1,10 @@
+services:
+  shiny:
+    image: business-app-shiny-app:latest
+    container_name: shiny_app_container
+    restart: unless-stopped
+    ports:
+      - "3838:3838"
+    volumes:
+      - "./app/:/srv/shiny-server"
+      - "./log/shiny-server/:/var/log/shiny-server/"
