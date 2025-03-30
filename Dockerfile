@@ -17,7 +17,12 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     python3-venv \
     python3-dev \
-    glpk-utils  
+    glpk-utils \
+    libgdal-dev \
+    gdal-bin \
+    libgeos-dev \
+    libproj-dev \
+    libudunits2-dev
     
     # Install Node.js
 RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - \
